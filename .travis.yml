@@ -8,7 +8,7 @@ cache:
 
 branches:
   only:
-  - develop // 対象ブランチ
+  - develop #対象ブランチ
 
 install:
   - npm install
@@ -20,8 +20,8 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_ACCESS_TOKEN // Travis CIのウェブページで設定した変数
-  target-branch: master // デプロイ先ブランチ
-  local-dir: dist // 対象ディレクトリ
+  github-token: $GITHUB_ACCESS_TOKEN #Travis CIのウェブページで設定した変数
+  target-branch: master #デプロイ先ブランチ
+  local-dir: dist #対象ディレクトリ
   on:
-    branch: develop // 対象ブランチ
+    branch: develop #対象ブランチ
