@@ -19,9 +19,9 @@ script:
 
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_ACCESS_TOKEN #Travis CIのウェブページで設定した変数
-  target-branch: master #デプロイ先ブランチ
-  local-dir: dist #対象ディレクトリ
+  skip_cleanup: true
+  github_token: $GITHUB_ACCESS_TOKEN #Travis CIのウェブページで設定した変数
+  target_branch: master #デプロイ先ブランチ
+  local_dir: dist #対象ディレクトリ
   on:
     branch: develop #対象ブランチ
