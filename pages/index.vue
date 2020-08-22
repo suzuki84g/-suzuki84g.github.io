@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    helloworld
+    travisCI test
   </div>
 </template>
 
