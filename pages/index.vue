@@ -1,7 +1,6 @@
 <template>
   <div>
     <Profile />
-    <Portfolio />
     <History />
     <Topix />
   </div>
@@ -9,14 +8,12 @@
 
 <script>
 import Profile from '~/components/Profile'
-import Portfolio from '~/components/Portfolio'
 import History from '~/components/History'
 import Topix from '~/components/Topix'
 
 export default {
   components: {
     Profile,
-    Portfolio,
     History,
     Topix
   }

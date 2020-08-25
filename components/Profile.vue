@@ -28,4 +28,8 @@ export default {
 </script>
 
 <style lang="scss">
+img {
+  width: 100%;
+  height: auto;
+}
 </style>
