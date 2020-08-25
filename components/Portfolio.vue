@@ -1,12 +1,5 @@
 <template>
   <div class="portfolio">
-    <div class="topix">
-      <ui>
-        <span>topix</span>
-        <li>子供2人</li>
-        <li>TVゲーム（splatoon2/APEX）</li>
-      </ui>
-    </div>
   </div>
 </template>
 

@@ -3,6 +3,7 @@
     <Profile />
     <Portfolio />
     <History />
+    <Topix />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Profile from '~/components/Profile'
 import Portfolio from '~/components/Portfolio'
 import History from '~/components/History'
+import Topix from '~/components/Topix'
 
 export default {
   components: {
     Profile,
     Portfolio,
-    History
+    History,
+    Topix
   }
 }
 </script>
