@@ -1,11 +1,17 @@
 <template>
   <div class="container">
-    travisCI test
+    <Portfolio />
   </div>
 </template>
 
 <script>
-export default {}
+import Portfolio from '~/components/Portfolio'
+
+export default {
+  components: {
+    Portfolio
+  }
+}
 </script>
 
 <style lang="scss">
