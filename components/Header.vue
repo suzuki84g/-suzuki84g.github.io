@@ -1,7 +1,11 @@
 <template>
   <div class="header">
-    <h1>ポートフォリオ</h1>
-    <div>navlist</div>
+    <div class="title">
+      <h1>ポートフォリオ</h1>
+    </div>
+    <div>
+      navlist
+    </div>
   </div>
 </template>
 
@@ -11,10 +15,16 @@ export default {}
 
 <style lang="scss">
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   h1 {
     font: {
       weight: bold;
     }
+  }
+  div:last-child {
+    align-self: flex-end;
   }
 }
 </style>
