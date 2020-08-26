@@ -4,13 +4,19 @@
       <h1>ポートフォリオ</h1>
     </div>
     <div>
-      navlist
+      <Navlist />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Navlist from '~/components/Navlist'
+
+export default {
+  components: {
+    Navlist
+  }
+}
 </script>
 
 <style lang="scss">
