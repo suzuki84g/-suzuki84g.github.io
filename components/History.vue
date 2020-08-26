@@ -1,9 +1,13 @@
 <template>
   <div class="history">
     <h2>Timeline</h2>
-    <div v-for="history in history" :key="history.year">
-      <span>{{ history.year }}年 {{ history.value }}</span>
-    </div>
+    <table>
+      <tbody>
+        <tr v-for="history in history" :key="history.year">
+          <td>{{ history.year }}年 {{ history.value }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
