@@ -22,14 +22,14 @@ export default {
         month: 10,
         day: 27
       },
-      age: null,
+      age: {},
       calcDate: {
         birthday: {},
         today: {}
       },
       recentPhotograph: {
-        imgSrc: require('@/assets/image/YoutubeCutout.png'),
-        caption: '写真右 2020年2月 スプラトゥーン甲子園関東地区大会にて'
+        imgSrc: require('@/assets/image/image0.jpg'),
+        caption: '写真右 2020年2月 スプラトゥーン甲子園関東地区大会'
       }
     }
   },

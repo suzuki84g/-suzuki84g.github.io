@@ -1,6 +1,6 @@
 <template>
   <div class="history">
-    <h2>職歴</h2>
+    <h2>Timeline</h2>
     <div v-for="history in history" :key="history.year">
       <span>{{ history.year }}年 {{ history.value }}</span>
     </div>

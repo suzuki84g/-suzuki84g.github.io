@@ -1,6 +1,6 @@
 <template>
   <div class="topix">
-    <h2>topix</h2>
+    <h2>Topix</h2>
     <div v-for="topix in topix" :key="topix.title">
       <span>{{ topix.title }} {{ topix.value }}</span>
     </div>
