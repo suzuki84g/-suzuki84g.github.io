@@ -1,3 +1,4 @@
+import loader from "sass-loader"
 
 export default {
   /*

@@ -11,9 +11,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "marked": "^1.1.1",
     "nuxt": "^2.14.0",
-    "raw-loader": "^4.0.1",
     "ress": "^3.0.0"
   },
   "devDependencies": {

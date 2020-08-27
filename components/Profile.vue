@@ -8,6 +8,7 @@
       <img :src="recentPhotograph.imgSrc" alt="近影">
       <figcaption>{{ recentPhotograph.caption }}</figcaption>
     </figure>
+    <p>{{ profileSentence.message }}</p>
   </div>
 </template>
 
@@ -28,11 +29,14 @@ export default {
         birthday: {},
         today: {}
       },
+      profileSentence: require('@/assets/json/profileSentence.json'),
       recentPhotograph: {
         imgSrc: require('@/assets/image/image0.jpg'),
         caption: '写真右 2020年2月 スプラトゥーン甲子園関東地区大会'
       }
     }
+  },
+  computed: {
   },
   mounted () {
     this.calcAge()
