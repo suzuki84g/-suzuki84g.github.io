@@ -22,6 +22,7 @@ export default {
         month: 10,
         day: 27
       },
+      mail: 'suzuki.84g@gmail.com',
       age: {},
       calcDate: {
         birthday: {},
