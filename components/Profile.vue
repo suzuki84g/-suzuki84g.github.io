@@ -4,7 +4,10 @@
     <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
     <span>{{ myBirthday.year }}年{{ myBirthday.month }}月{{ myBirthday.day }}日</span>
     <span>年齢 {{ age }}</span>
-    <p>{{ profileSentence.message }}</p>
+    <div class="message">
+      <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="image">
+      <p>{{ profileSentence.message }}</p>
+    </div>
   </div>
 </template>
 
