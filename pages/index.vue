@@ -3,6 +3,7 @@
     <Profile />
     <History />
     <Images />
+    <Skills />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Profile from '~/components/Profile'
 import History from '~/components/History'
 import Images from '~/components/Images'
+import Skills from '~/components/Skills'
 
 export default {
   components: {
     Profile,
     History,
-    Images
+    Images,
+    Skills
   }
 }
 </script>
