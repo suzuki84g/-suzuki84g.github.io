@@ -1,6 +1,9 @@
 <template>
   <div>
-    Link
+    <h2>Link</h2>
+    <p>qiita</p>
+    <p>github</p>
+    <p>mail</p>
   </div>
 </template>
 

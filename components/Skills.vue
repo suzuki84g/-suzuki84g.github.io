@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>Skill</h2>
     <div v-for="skill in skills" :key="skill">
       <div class="skill">
         <p>{{ skill.language }}</p>
