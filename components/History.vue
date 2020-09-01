@@ -3,9 +3,9 @@
     <h2>Timeline</h2>
     <table>
       <tbody>
-        <tr v-for="history in history" :key="history.year">
-          <th>{{ history.year }}年 {{ history.month }}</th>
-          <td>{{ history.value }}</td>
+        <tr v-for="line in timeline" :key="line.year">
+          <th>{{ line.year }}年 {{ line.month }}</th>
+          <td>{{ line.value }}</td>
         </tr>
       </tbody>
     </table>
@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      history: [
+      timeline: [
         { year: 2011, month: '春', value: '大学を卒業し、SIerへのSES事業を行う都内の企業に就職。ネットワーク機器、サーバの運用保守を中心に、金融機関本社の移転PJなど、様々な案件を経験する。' },
         { year: 2017, month: '夏', value: 'エンジニアとしての技術が全く身についていない事に危機感を覚え、ECシステムを中心に扱う同業他社に転職。大手通信会社系のSIerに常駐し、Linux/Windowsで稼働するシステム全般の運用保守、開発提案業務を行う。' },
         { year: 2018, month: '夏', value: '結局何も変えられなかった事に気付き、退職する。家内からの指摘から通院したところ、ADHDと鬱の診断が下る。各種手当を受け取りつつ、専業主夫生活を開始する。' },
