@@ -7,13 +7,8 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/Works">
-          Works
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/Link">
-          Link
+        <nuxt-link to="/components/History.vue">
+          History
         </nuxt-link>
       </li>
     </ul>
