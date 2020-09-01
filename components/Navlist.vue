@@ -1,9 +1,21 @@
 <template>
   <div>
     <ul>
-      <li>Home</li>
-      <li>Work</li>
-      <li>Contact</li>
+      <li>
+        <nuxt-link to="/">
+          Home
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/Works">
+          Works
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/Link">
+          Link
+        </nuxt-link>
+      </li>
     </ul>
   </div>
 </template>
