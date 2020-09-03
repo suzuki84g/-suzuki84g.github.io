@@ -1,9 +1,9 @@
 <template>
   <div>
     <Profile />
+    <Skills />
     <History />
     <!-- <Images /> -->
-    <Skills />
     <Works />
     <Link />
   </div>
@@ -11,18 +11,18 @@
 
 <script>
 import Profile from '~/components/Profile'
+import Skills from '~/components/Skills'
 import History from '~/components/History'
 // import Images from '~/components/Images'
-import Skills from '~/components/Skills'
 import Works from '~/components/Works'
 import Link from '~/components/Link'
 
 export default {
   components: {
     Profile,
+    Skills,
     History,
     // Images,
-    Skills,
     Works,
     Link
   }
