@@ -3,8 +3,8 @@
     <h2 class="col-12">
       Plofile
     </h2>
-    <img class="col-6" src="/favicon_package_v0.16/android-chrome-512x512.png" alt="image">
-    <div class="col-6">
+    <img class="col-sm-6" src="/favicon_package_v0.16/android-chrome-512x512.png" alt="image">
+    <div class="col-sm-6">
       <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
       <p>{{ myBirthday.year }}年{{ myBirthday.month }}月{{ myBirthday.day }}日</p>
       <p>年齢 {{ age }}</p>
