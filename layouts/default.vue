@@ -1,5 +1,5 @@
 <template>
-  <div class="contenar">
+  <div class="container-fluid">
     <Header />
     <Nuxt />
   </div>
@@ -16,14 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
-.contenar {
-  display: flex;
-  flex-direction: column;
-  > div {
-    border-style: solid;
-    border-width: 1px;
-  }
-}
 html {
   font-family:
     'M PLUS 1p',
