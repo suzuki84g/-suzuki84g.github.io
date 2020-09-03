@@ -5,6 +5,12 @@
     </h2>
     <div class="col-12">
       <table class="table">
+        <thead>
+          <tr>
+            <th>時期</th>
+            <th>できごと</th>
+          </tr>
+        </thead>
         <tbody>
           <tr v-for="line in timeline" :key="line.year">
             <th>
