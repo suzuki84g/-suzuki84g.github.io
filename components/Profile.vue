@@ -1,14 +1,14 @@
 <template>
-  <div class="profile row">
+  <div class="profile row justify-content-center">
     <h2 class="col-12">
       About
     </h2>
-    <div class="portrait col-sm-6">
+    <div class="portrait col-sm-3">
       <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
     </div>
     <div class="introduction col-sm-6">
-      <p>名前：{{ nameKanzi }} / {{ nameAlphabet }}</p>
-      <p>生年月日： {{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
+      <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
+      <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
       <p>{{ profileSentence.message }}</p>
     </div>
   </div>
@@ -60,11 +60,13 @@ export default {
 <style lang="scss">
 .profile {
   .portrait {
-    text-align: center;
     img {
       border-radius: 50%;
+    }
+    @media (max-width: 414px) {
       width: 70%;
-      height: auto;
+      height: 70%;
+      padding-bottom: 15px;
     }
   }
   .introduction {
