@@ -1,13 +1,14 @@
 <template>
   <div class="profile row">
     <h2 class="col-12">
-      Plofile
+      About
     </h2>
-    <img class="col-sm-6" src="/favicon_package_v0.16/android-chrome-512x512.png" alt="image">
-    <div class="col-sm-6">
-      <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
-      <p>{{ myBirthday.year }}年{{ myBirthday.month }}月{{ myBirthday.day }}日</p>
-      <p>年齢 {{ age }}</p>
+    <div class="portrait col-sm-6">
+      <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
+    </div>
+    <div class="introduction col-sm-6">
+      <p>名前：{{ nameKanzi }} / {{ nameAlphabet }}</p>
+      <p>生年月日： {{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
       <p>{{ profileSentence.message }}</p>
     </div>
   </div>
@@ -57,4 +58,17 @@ export default {
 </script>
 
 <style lang="scss">
+.profile {
+  .portrait {
+    text-align: center;
+    img {
+      border-radius: 50%;
+      width: 70%;
+      height: auto;
+    }
+  }
+  .introduction {
+    align-self: center;
+  }
+}
 </style>
