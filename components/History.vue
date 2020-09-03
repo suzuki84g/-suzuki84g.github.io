@@ -1,14 +1,22 @@
 <template>
-  <div class="history">
-    <h2>Timeline</h2>
-    <table>
-      <tbody>
-        <tr v-for="line in timeline" :key="line.year">
-          <th>{{ line.year }}年 {{ line.month }}</th>
-          <td>{{ line.value }}</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="history row">
+    <h2 class="col-12">
+      Timeline
+    </h2>
+    <div class="col-12">
+      <table class="table">
+        <tbody>
+          <tr v-for="line in timeline" :key="line.year">
+            <th>
+              {{ line.year }}年 {{ line.month }}
+            </th>
+            <td>
+              {{ line.value }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -31,4 +39,7 @@ export default {
 </script>
 
 <style lang="scss">
+th {
+  white-space: nowrap;
+}
 </style>

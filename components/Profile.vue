@@ -1,11 +1,13 @@
 <template>
-  <div class="profile">
-    <h2>Plofile</h2>
-    <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
-    <span>{{ myBirthday.year }}年{{ myBirthday.month }}月{{ myBirthday.day }}日</span>
-    <span>年齢 {{ age }}</span>
-    <div class="message">
-      <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="image">
+  <div class="profile row">
+    <h2 class="col-12">
+      Plofile
+    </h2>
+    <img class="col-6" src="/favicon_package_v0.16/android-chrome-512x512.png" alt="image">
+    <div class="col-6">
+      <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
+      <p>{{ myBirthday.year }}年{{ myBirthday.month }}月{{ myBirthday.day }}日</p>
+      <p>年齢 {{ age }}</p>
       <p>{{ profileSentence.message }}</p>
     </div>
   </div>

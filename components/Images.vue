@@ -1,7 +1,9 @@
 <template>
-  <div class="image">
-    <h2>Activity</h2>
-    <div v-for="item in items" :key="item">
+  <div class="image row">
+    <h2 class="col-12">
+      Activity
+    </h2>
+    <div v-for="item in items" :key="item" class="col-12">
       <h3>{{ item.title }}</h3>
       <figure v-for="image in item.images" :key="image">
         <img :src="image.imgSrc">

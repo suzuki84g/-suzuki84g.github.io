@@ -1,11 +1,9 @@
 <template>
-  <div class="header">
-    <div class="title">
-      <h1>ポートフォリオ</h1>
-    </div>
-    <div>
-      <Navlist />
-    </div>
+  <div class="header row">
+    <h1 class="col-12">
+      ポートフォリオ
+    </h1>
+    <Navlist />
   </div>
 </template>
 

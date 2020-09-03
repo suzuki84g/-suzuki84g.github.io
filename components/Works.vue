@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <h2>Works</h2>
-    <div v-for="work in works" :key="work">
+  <div class="works row">
+    <h2 class="col-12">
+      Works
+    </h2>
+    <div v-for="work in works" :key="work" class="col-12">
       <ul>
         <li>{{ work.title }}</li>
         <li>{{ work.url }}</li>

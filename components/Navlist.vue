@@ -1,17 +1,11 @@
 <template>
   <div>
-    <ul>
-      <li>
-        <nuxt-link to="/">
-          Home
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/components/History.vue">
-          History
-        </nuxt-link>
-      </li>
-    </ul>
+    <nuxt-link to="/" class="col-auto">
+      Home
+    </nuxt-link>
+    <nuxt-link to="/components/History.vue" class="col-auto">
+      History
+    </nuxt-link>
   </div>
 </template>
 
