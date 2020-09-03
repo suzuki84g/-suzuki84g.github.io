@@ -1,6 +1,6 @@
 <template>
-  <div class="header row">
-    <h1 class="col-12">
+  <div class="header">
+    <h1 class="page-title">
       ポートフォリオ
     </h1>
     <Navlist />
@@ -20,15 +20,7 @@ export default {
 <style lang="scss">
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  h1 {
-    font: {
-      weight: bold;
-    }
-  }
-  div:last-child {
-    align-self: flex-end;
-  }
 }
 </style>

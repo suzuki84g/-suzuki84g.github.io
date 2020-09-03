@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <nuxt-link to="/" class="col-auto">
       Home
     </nuxt-link>
