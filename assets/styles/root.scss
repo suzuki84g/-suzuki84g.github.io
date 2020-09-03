@@ -1,3 +1,7 @@
+// `root.scss`に記述するもの
+// 配置関連
+// フォントなど
+
 html {
   font-family:
     'M PLUS 1p',
@@ -9,8 +13,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  h1 {
+    font-weight: bold;
+  }
   .container-fluid > .header {
     margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .container-fluid > .main > div {
     margin-bottom: 30px;
   }
 //   .container-fluid > .main {
