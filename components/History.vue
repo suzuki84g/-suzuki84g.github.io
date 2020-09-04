@@ -1,9 +1,9 @@
 <template>
-  <div class="history row">
+  <div class="history row justify-content-center">
     <h2 class="col-12">
       Timeline
     </h2>
-    <div class="col-12">
+    <div class="col-11">
       <table class="table">
         <thead>
           <tr>
