@@ -3,16 +3,16 @@
     <h1 class="page-title">
       ポートフォリオ
     </h1>
-    <Navlist />
+    <!-- <Navlist /> -->
   </div>
 </template>
 
 <script>
-import Navlist from '~/components/Navlist'
+// import Navlist from '~/components/Navlist'
 
 export default {
   components: {
-    Navlist
+    // Navlist
   }
 }
 </script>
