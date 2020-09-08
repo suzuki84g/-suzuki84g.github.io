@@ -55,7 +55,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'bootstrap-vue/nuxt'
+    '@nuxtjs/vuetify'
   ],
   /*
   ** Build configuration
