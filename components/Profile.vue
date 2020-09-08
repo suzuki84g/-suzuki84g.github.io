@@ -1,17 +1,17 @@
 <template>
-  <div class="profile row justify-content-center">
-    <h2 class="col-12">
+  <v-row class="profile">
+    <v-col cols="12" class="row-title">
       About
-    </h2>
-    <div class="portrait col-sm-3">
+    </v-col>
+    <v-col cols="3" class="portrait">
       <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
-    </div>
-    <div class="introduction col-sm-6">
+    </v-col>
+    <v-col cols="6" class="introduction">
       <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
       <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
       <p>{{ profileSentence.message }}</p>
-    </div>
-  </div>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

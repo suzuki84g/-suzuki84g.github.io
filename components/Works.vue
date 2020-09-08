@@ -1,17 +1,17 @@
 <template>
-  <div class="works row justify-content-center">
-    <h2 class="col-12">
+  <v-row class="works">
+    <v-col cols="12" class="row-title">
       Works
-    </h2>
-    <div v-for="work in works" :key="work" class="card">
-      <div class="card-body">
-        <h4>{{ work.title }}</h4>
+    </v-col>
+    <v-card v-for="work in works" :key="work">
+      <v-card-title>{{ work.title }}</v-card-title>
+      <v-card-text>
         <p>{{ work.about }}</p>
         <p><a :href="work.url">{{ work.url }}</a></p>
         <p><a :href="work.code">github</a></p>
-      </div>
-    </div>
-  </div>
+      </v-card-text>
+    </v-card>
+  </v-row>
 </template>
 
 <script>
@@ -38,8 +38,4 @@ export default {
 </script>
 
 <style lang="scss">
-.card {
-  width: 40%;
-  margin: 0px 10px;
-}
 </style>

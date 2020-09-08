@@ -1,10 +1,10 @@
 <template>
-  <div class="history row justify-content-center">
-    <h2 class="col-12">
+  <v-row class="history">
+    <v-col cols="12" class="row-title">
       Timeline
-    </h2>
-    <div class="col-11">
-      <table class="table">
+    </v-col>
+    <v-cal cals="10">
+      <v-simple-table>
         <thead>
           <tr>
             <th>時期</th>
@@ -21,9 +21,9 @@
             </td>
           </tr>
         </tbody>
-      </table>
-    </div>
-  </div>
+      </v-simple-table>
+    </v-cal>
+  </v-row>
 </template>
 
 <script>
