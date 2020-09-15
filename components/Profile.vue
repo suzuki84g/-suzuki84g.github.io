@@ -1,17 +1,21 @@
 <template>
-  <v-row class="profile">
-    <v-col cols="12" class="row-title">
-      About
-    </v-col>
-    <v-col cols="3" class="portrait">
-      <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
-    </v-col>
-    <v-col cols="6" class="introduction">
-      <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
-      <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
-      <p>{{ profileSentence.message }}</p>
-    </v-col>
-  </v-row>
+  <div class="profile">
+    <v-row>
+      <v-col class="row-title">
+        About
+      </v-col>
+    </v-row>
+    <v-row justify="between">
+      <v-col cols="3" class="portrait">
+        <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
+      </v-col>
+      <v-col cols="6" class="introduction">
+        <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
+        <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
+        <p>{{ profileSentence.message }}</p>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -68,9 +72,6 @@ export default {
       height: 70%;
       padding-bottom: 15px;
     }
-  }
-  .introduction {
-    align-self: center;
   }
 }
 </style>

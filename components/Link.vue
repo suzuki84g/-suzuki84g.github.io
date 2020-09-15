@@ -1,5 +1,5 @@
 <template>
-  <v-row class="link">
+  <v-row class="link" justify="center">
     <v-col cols="12" class="row-title">
       Link
     </v-col>

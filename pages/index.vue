@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <v-container fluid>
     <Profile />
     <Skills />
     <History />
     <!-- <Images /> -->
     <Works />
     <Link />
-  </div>
+  </v-container>
 </template>
 
 <script>
