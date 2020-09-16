@@ -9,10 +9,14 @@
       </div>
       <div class="introduction">
         <div class="base-status">
-          <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
-          <p>Webエンジニア / 主夫</p>
-          <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
-          <p>{{ mail }}</p>
+          <div class="name-box">
+            <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
+          </div>
+          <div class="text-box">
+            <p>Webエンジニア / 主夫</p>
+            <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
+            <p>{{ mail }}</p>
+          </div>
         </div>
         <Link />
       </div>
@@ -74,6 +78,10 @@ export default {
   flex-direction: row;
   justify-content: center;
   margin: auto;
+  @media screen and (max-width: 414px) {
+    // SPモード
+    flex-direction: column;
+  }
   >div {
     margin: 0 2em;
   }
@@ -91,6 +99,13 @@ export default {
       width: auto;
       align-self: start;
       margin-bottom: 1rem;
+      .name-box {
+        margin-bottom: 1rem;
+        border-bottom: solid 1px $border-gray;
+      }
+      .text-box {
+        margin-left: 1rem;
+      }
     }
   }
 }
