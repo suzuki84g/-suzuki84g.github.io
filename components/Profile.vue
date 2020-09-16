@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <section>
     <div class="title">
       <h2>About</h2>
     </div>
@@ -21,7 +21,7 @@
         <Link />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

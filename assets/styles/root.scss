@@ -24,7 +24,7 @@ h1 {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  .content {
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,14 +35,15 @@ h1 {
         text-align: start;
       }
     }
-    .mainContainer {
-      // 間隔
+    [class*="-container"] {
       margin-bottom: 2rem;
+      padding: 0 1rem;
     }
   }
 }
 // h3見出し関連
-.name-box {
+h3 {
+  display: inline-block;
   margin-bottom: 1rem;
   border-bottom: solid 1px $border-gray;
 }
