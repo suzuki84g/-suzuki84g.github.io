@@ -41,6 +41,11 @@ h1 {
     }
   }
 }
+// h3見出し関連
+.name-box {
+  margin-bottom: 1rem;
+  border-bottom: solid 1px $border-gray;
+}
 img {
   width: 100%;
   height: auto;

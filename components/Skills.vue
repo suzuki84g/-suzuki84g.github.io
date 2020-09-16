@@ -3,25 +3,15 @@
     <div class="title">
       <h2>Skill</h2>
     </div>
-    <div class="mainContainer">
-      <div class="front">
-        <p>フロント技術</p>
-        <p v-for="front in skillSet.front" :key="front">
-          {{ front }}
-        </p>
+    <div v-for="skill in skillSet" :key="skill.field" class="skill">
+      <div class="name-box">
+        <h3>{{ skill.field }}</h3>
       </div>
-      <div class="backend">
-        <p>サーバサイド技術</p>
-        <p v-for="back in skillSet.back" :key="back">
-          {{ back }}
-        </p>
-      </div>
-      <div class="other">
-        <p>その他、インフラや開発ツール</p>
-        <p v-for="other in skillSet.other" :key="other">
-          {{ other }}
-        </p>
-      </div>
+      <ul>
+        <li v-for="ability in skill.abilitys" :key="ability">
+          {{ ability }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -30,15 +20,29 @@
 export default {
   data () {
     return {
-      skillSet: {
-        front: ['html', 'css/sass', 'javascript', 'Bootstrap', 'Vue.js', 'Nuxt.js', 'Vuetify'],
-        back: ['Linux', 'WindowsServer', 'Python', 'Node.js', 'MySQL'],
-        other: ['git', 'GitHub', 'docker', 'Vagrant', 'AWS', 'Heroku', 'PMO', 'オンプレミス環境の物理作業']
-      }
+      skillSet: [
+        {
+          field: 'フロントエンド',
+          abilitys: ['html', 'css/sass', 'javascript', 'Bootstrap', 'Vue.js', 'Nuxt.js', 'Vuetify']
+        },
+        {
+          field: 'バックエンド',
+          abilitys: ['Linux', 'WindowsServer', 'Python', 'Node.js', 'MySQL']
+        },
+        {
+          field: 'その他',
+          abilitys: ['git', 'GitHub', 'docker', 'Vagrant', 'AWS', 'Heroku', 'PMO', 'オンプレミス環境の物理作業']
+        }
+      ]
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 </style>

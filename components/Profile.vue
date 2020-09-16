@@ -46,7 +46,7 @@ export default {
         birthday: {},
         today: {}
       },
-      profileSentence: require('@/assets/json/profileSentence.json')
+      profileSentence: 'てすとてすとてすと'
     }
   },
   computed: {
@@ -99,11 +99,11 @@ export default {
       width: auto;
       align-self: start;
       margin-bottom: 1rem;
-      .name-box {
-        margin-bottom: 1rem;
-        border-bottom: solid 1px $border-gray;
-      }
       .text-box {
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .about {
         margin-left: 1rem;
       }
     }
