@@ -1,29 +1,29 @@
 <template>
-  <v-container fluid>
+  <div class="container">
     <Profile />
-    <Skills />
-    <History />
+    <!-- <Skills /> -->
+    <!-- <History /> -->
     <!-- <Images /> -->
-    <Works />
+    <!-- <Works /> -->
     <Link />
-  </v-container>
+  </div>
 </template>
 
 <script>
 import Profile from '~/components/Profile'
-import Skills from '~/components/Skills'
-import History from '~/components/History'
+// import Skills from '~/components/Skills'
+// import History from '~/components/History'
 // import Images from '~/components/Images'
-import Works from '~/components/Works'
+// import Works from '~/components/Works'
 import Link from '~/components/Link'
 
 export default {
   components: {
     Profile,
-    Skills,
-    History,
+    // Skills,
+    // History,
     // Images,
-    Works,
+    // Works,
     Link
   }
 }
