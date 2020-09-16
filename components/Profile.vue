@@ -14,9 +14,7 @@
           <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
           <p>{{ mail }}</p>
         </div>
-        <div class="sns-link">
-          <Link />
-        </div>
+        <Link />
       </div>
     </div>
   </div>
