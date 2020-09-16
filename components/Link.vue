@@ -31,7 +31,24 @@ export default {
         github: require('@/assets/image/logo/GitHub-Mark-120px-plus.png'),
         qiita: require('@/assets/image/logo/qiita.png'),
         gmail: require('@/assets/image/logo/googlemail-128.png')
-      }
+      },
+      sns: [
+        {
+          serviceName: 'GitHub',
+          url: 'https://github.com/suzuki84g/',
+          icon: require('@/assets/image/logo/GitHub-Mark-120px-plus.png')
+        },
+        {
+          serviceName: 'Qiita',
+          url: 'https://qiita.com/suzuki_cs',
+          icon: require('@/assets/image/logo/qiita.png')
+        },
+        {
+          serviceName: 'mailform',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSfHFyNjfbH8tWLs9-GVh9Ax3QKBpFs6OwdVaAXmdTn183q7ew/viewform?usp=sf_link',
+          icon: require('@/assets/image/logo/googlemail-128.png')
+        }
+      ]
     }
   }
 }
