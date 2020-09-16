@@ -8,9 +8,11 @@
         <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
       </div>
       <div class="introduction">
-        <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
+        <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
+        <p>Webエンジニア / 主夫</p>
         <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
-        <p>{{ profileSentence.message }}</p>
+        <p>{{ mail }}</p>
+        <!-- <p>{{ profileSentence.message }}</p> -->
       </div>
     </div>
   </div>
@@ -64,18 +66,19 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: auto;
   >div {
     margin: 0 2em;
   }
-}
-.portrait {
-  img {
-    border-radius: 50%;
+  .portrait {
+    width: 30%;
+    img {
+      border-radius: 50%;
+    }
   }
-  @media (max-width: 414px) {
-    width: 70%;
-    height: 70%;
-    padding-bottom: 15px;
+  .introduction {
+    width: 30%;
+    align-self: center;
   }
 }
 </style>

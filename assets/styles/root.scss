@@ -3,40 +3,45 @@
 // フォントなど
 
 html {
-  font-family:
-    'M PLUS 1p',
-     sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  h1 {
-    font-weight: bold;
-  }
-  .container {
+font-family:
+  'M PLUS 1p',
+    sans-serif;
+font-size: 16px;
+word-spacing: 1px;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+box-sizing: border-box;
+h1 {
+  font-weight: bold;
+}
+.wrapper {
+  // iPad横が最大サイズ
+  max-width: 1024px;
+}
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  .content {
     display: flex;
     flex-direction: column;
-    .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      .title {
-        margin-bottom: 1rem;
-        h2 {
-          text-align: center;
-        }
-      }
-      .mainContainer {
-        // 間隔
-        margin-bottom: 10rem;
+    justify-content: center;
+    .title {
+      margin-bottom: 1rem;
+      h2 {
+        text-align: center;
       }
     }
+    .mainContainer {
+      // 間隔
+      margin-bottom: 10rem;
+    }
   }
-  img {
-    width: 100%;
-    height: auto;
-  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
 }
