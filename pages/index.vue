@@ -5,7 +5,6 @@
     <!-- <History /> -->
     <!-- <Images /> -->
     <!-- <Works /> -->
-    <!-- <Link /> -->
   </div>
 </template>
 
@@ -15,7 +14,6 @@ import Profile from '~/components/Profile'
 // import History from '~/components/History'
 // import Images from '~/components/Images'
 // import Works from '~/components/Works'
-// import Link from '~/components/Link'
 
 export default {
   components: {
@@ -23,8 +21,7 @@ export default {
     // Skills,
     // History,
     // Images,
-    // Works,
-    // Link
+    // Works
   }
 }
 </script>
