@@ -48,7 +48,6 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/vuetify',
     '@nuxtjs/eslint-module'
   ],
   /*
@@ -56,9 +55,6 @@ export default {
   */
   modules: [
   ],
-  vuetify: {
-    customVariables: ['~/assets/styls/root.scss']
-  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
