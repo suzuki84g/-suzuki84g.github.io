@@ -3,7 +3,7 @@
     <div class="title">
       <h2>About</h2>
     </div>
-    <div class="mainContainer">
+    <div class="profile-container">
       <div class="avatar">
         <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
       </div>
@@ -73,7 +73,7 @@ export default {
 </script>
 
 <style lang="scss">
-.mainContainer {
+.profile-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
