@@ -1,24 +1,26 @@
 <template>
-  <v-row class="link" justify="center">
-    <v-col cols="12" class="row-title">
+  <div class="content">
+    <div class="title">
       Link
-    </v-col>
-    <v-col cols="3">
-      <a href="https://github.com/suzuki84g/" class="col-3">
-        <img :src="icon.github" class="icon">
-      </a>
-    </v-col>
-    <v-col cols="3">
-      <a href="https://qiita.com/suzuki_cs" class="col-3">
-        <img :src="icon.qiita" class="icon">
-      </a>
-    </v-col>
-    <v-col cols="3">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHFyNjfbH8tWLs9-GVh9Ax3QKBpFs6OwdVaAXmdTn183q7ew/viewform?usp=sf_link" class="col-3">
-        <img :src="icon.gmail" class="icon">
-      </a>
-    </v-col>
-  </v-row>
+    </div>
+    <div class="mainContainer">
+      <div>
+        <a href="https://github.com/suzuki84g/" class="col-3">
+          <img :src="icon.github" class="icon">
+        </a>
+      </div>
+      <div>
+        <a href="https://qiita.com/suzuki_cs" class="col-3">
+          <img :src="icon.qiita" class="icon">
+        </a>
+      </div>
+      <div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHFyNjfbH8tWLs9-GVh9Ax3QKBpFs6OwdVaAXmdTn183q7ew/viewform?usp=sf_link" class="col-3">
+          <img :src="icon.gmail" class="icon">
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
