@@ -1,33 +1,29 @@
 <template>
-  <v-row class="skill">
-    <v-col cols="12" class="row-title">
-      Skill
-    </v-col>
-    <v-card>
-      <v-card-title>フロント技術</v-card-title>
-      <v-card-text>
+  <div class="content">
+    <div class="title">
+      <h2>Skill</h2>
+    </div>
+    <div class="mainContainer">
+      <div class="front">
+        <p>フロント技術</p>
         <p v-for="front in skillSet.front" :key="front">
           {{ front }}
         </p>
-      </v-card-text>
-    </v-card>
-    <v-card>
-      <v-card-title>サーバサイド技術</v-card-title>
-      <v-card-text>
+      </div>
+      <div class="backend">
+        <p>サーバサイド技術</p>
         <p v-for="back in skillSet.back" :key="back">
           {{ back }}
         </p>
-      </v-card-text>
-    </v-card>
-    <v-card>
-      <v-card-title>その他、インフラや開発ツール</v-card-title>
-      <v-card-text>
+      </div>
+      <div class="other">
+        <p>その他、インフラや開発ツール</p>
         <p v-for="other in skillSet.other" :key="other">
           {{ other }}
         </p>
-      </v-card-text>
-    </v-card>
-  </v-row>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
