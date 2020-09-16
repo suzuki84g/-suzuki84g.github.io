@@ -1,20 +1,18 @@
 <template>
-  <div class="profile">
-    <v-row>
-      <v-col class="row-title">
-        About
-      </v-col>
-    </v-row>
-    <v-row justify="between">
-      <v-col cols="3" class="portrait">
+  <div class="content">
+    <div class="title">
+      About
+    </div>
+    <div class="mainContainer">
+      <div class="portrait">
         <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
-      </v-col>
-      <v-col cols="6" class="introduction">
+      </div>
+      <div class="introduction">
         <p>{{ nameKanzi }} / {{ nameAlphabet }}</p>
         <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
         <p>{{ profileSentence.message }}</p>
-      </v-col>
-    </v-row>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -62,16 +60,22 @@ export default {
 </script>
 
 <style lang="scss">
-.profile {
-  .portrait {
-    img {
-      border-radius: 50%;
-    }
-    @media (max-width: 414px) {
-      width: 70%;
-      height: 70%;
-      padding-bottom: 15px;
-    }
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  >div {
+    margin: 0 2em;
+  }
+}
+.portrait {
+  img {
+    border-radius: 50%;
+  }
+  @media (max-width: 414px) {
+    width: 70%;
+    height: 70%;
+    padding-bottom: 15px;
   }
 }
 </style>

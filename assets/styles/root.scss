@@ -16,14 +16,20 @@ html {
   h1 {
     font-weight: bold;
   }
-  .row-title {
-    font: {
-      size: x-large;
-      weight: bold;
+  .container {
+    display: flex;
+    flex-direction: column;
+    .title {
+      margin-bottom: 1rem;
+      font: {
+        size: x-large;
+        weight: bold;
+      }
     }
-  }
-  h2 {
-    margin: 1rem;
+    .mainContainer {
+      // 間隔
+      margin-bottom: 10rem;
+    }
   }
   img {
     width: 100%;
