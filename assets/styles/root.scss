@@ -29,9 +29,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     .title {
-      margin-bottom: 1rem;
+      border-bottom: solid 1px $border-gray;
+      margin-bottom: 2rem;
       h2 {
-        text-align: center;
+        text-align: start;
       }
     }
     .mainContainer {
