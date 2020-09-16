@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss">
 .header {
+  background-color: $background-gray;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
