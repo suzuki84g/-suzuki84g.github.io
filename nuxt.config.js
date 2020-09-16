@@ -30,7 +30,6 @@ export default {
   ** Global CSS
   */
   css: [
-    'ress',
     '~/assets/styles/root.scss'
   ],
   /*
@@ -57,6 +56,9 @@ export default {
   */
   modules: [
   ],
+  vuetify: {
+    customVariables: ['~/assets/styls/root.scss']
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
