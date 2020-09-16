@@ -1,8 +1,8 @@
 <template>
   <div class="content">
-    <div class="title">
+    <!-- <div class="title">
       <h2>Link</h2>
-    </div>
+    </div> -->
     <div class="mainContainer">
       <div>
         <a href="https://github.com/suzuki84g/">

@@ -4,24 +4,33 @@
       <h2>About</h2>
     </div>
     <div class="mainContainer">
-      <div class="portrait">
+      <div class="avatar">
         <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
       </div>
       <div class="introduction">
-        <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
-        <p>Webエンジニア / 主夫</p>
-        <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
-        <p>{{ mail }}</p>
-        <!-- <p>{{ profileSentence.message }}</p> -->
+        <div class="base-status">
+          <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
+          <p>Webエンジニア / 主夫</p>
+          <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
+          <p>{{ mail }}</p>
+        </div>
+        <div class="sns-link">
+          <Link />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Link from '~/components/Link'
+
 export default {
   data () {
     return {
+      components: [
+        Link
+      ],
       nameKanzi: '鈴木 優紀',
       nameAlphabet: 'SUZUKI Yuki',
       myBirthday: {
@@ -70,15 +79,20 @@ export default {
   >div {
     margin: 0 2em;
   }
-  .portrait {
+  .avatar {
     width: 30%;
     img {
       border-radius: 50%;
     }
   }
   .introduction {
-    width: 30%;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .base-status {
+      width: auto;
+      align-self: center;
+    }
   }
 }
 </style>

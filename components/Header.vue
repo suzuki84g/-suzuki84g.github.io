@@ -1,8 +1,11 @@
 <template>
   <div class="header">
-    <h1 class="page-title">
-      ポートフォリオ
-    </h1>
+    <div class="page-title">
+      <h1>ポートフォリオ</h1>
+    </div>
+    <div class="navlist">
+      <p>更新日付とか</p>
+    </div>
     <!-- <Navlist /> -->
   </div>
 </template>
@@ -20,7 +23,10 @@ export default {
 <style lang="scss">
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 15px;
+  .navlist {
+  }
 }
 </style>
