@@ -80,7 +80,7 @@ export default {
     margin: 0 2em;
   }
   .avatar {
-    width: 30%;
+    width: 20%;
     img {
       border-radius: 50%;
     }
@@ -91,7 +91,8 @@ export default {
     justify-content: center;
     .base-status {
       width: auto;
-      align-self: center;
+      align-self: start;
+      margin-bottom: 1rem;
     }
   }
 }
