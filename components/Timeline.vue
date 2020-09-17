@@ -1,29 +1,37 @@
 <template>
-  <v-row class="history">
-    <v-col cols="12" class="row-title">
-      Timeline
-    </v-col>
-    <v-cal cals="10">
-      <v-simple-table>
-        <thead>
-          <tr>
-            <th>時期</th>
-            <th>できごと</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="line in timeline" :key="line.year">
-            <th>
-              {{ line.year }}年 {{ line.month }}
-            </th>
-            <td>
-              {{ line.value }}
-            </td>
-          </tr>
-        </tbody>
-      </v-simple-table>
-    </v-cal>
-  </v-row>
+  <section>
+    <div class="title">
+      <h2>Timeline</h2>
+    </div>
+    <div class="timeline-container">
+      <div class="impressions">
+        <p>なんか所感を書くとしたらここ</p>
+      </div>
+      <div class="timeline">
+        <p>時系列とかそういうの</p>
+      </div>
+    </div>
+  </section>
+  <!-- <v-cal cals="10">
+    <v-simple-table>
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>できごと</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="line in timeline" :key="line.year">
+          <th>
+            {{ line.year }}年 {{ line.month }}
+          </th>
+          <td>
+            {{ line.value }}
+          </td>
+        </tr>
+      </tbody>
+    </v-simple-table>
+  </v-cal> -->
 </template>
 
 <script>
@@ -45,7 +53,11 @@ export default {
 </script>
 
 <style lang="scss">
-th {
-  white-space: nowrap;
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  .impressions {
+    margin-bottom: 1rem;
+  }
 }
 </style>
