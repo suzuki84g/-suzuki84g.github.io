@@ -2,7 +2,7 @@
   <div class="container">
     <Profile />
     <Skills />
-    <!-- <Works /> -->
+    <Works />
     <!-- <History /> -->
     <!-- <Images /> -->
   </div>
@@ -11,15 +11,15 @@
 <script>
 import Profile from '~/components/Profile'
 import Skills from '~/components/Skills'
-// import Works from '~/components/Works'
+import Works from '~/components/Works'
 // import History from '~/components/History'
 // import Images from '~/components/Images'
 
 export default {
   components: {
     Profile,
-    Skills
-    // Works
+    Skills,
+    Works
     // History,
     // Images,
   }

@@ -1,17 +1,17 @@
 <template>
-  <v-row class="works">
-    <v-col cols="12" class="row-title">
-      Works
-    </v-col>
-    <v-card v-for="work in works" :key="work">
-      <v-card-title>{{ work.title }}</v-card-title>
-      <v-card-text>
-        <p>{{ work.about }}</p>
+  <section>
+    <div class="title">
+      <h2>Works</h2>
+    </div>
+    <div class="works-container">
+      <div v-for="work in works" :key="work" class="work">
+        <p>{{ work.title }}</p>
+        <p>{{ work.overview }}</p>
         <p><a :href="work.url">{{ work.url }}</a></p>
         <p><a :href="work.code">github</a></p>
-      </v-card-text>
-    </v-card>
-  </v-row>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -21,15 +21,21 @@ export default {
       works: [
         {
           title: 'ポートフォリオ',
-          about: 'このポートフォリオです。',
+          overview: 'このポートフォリオです。',
+          // image: require(),
           url: 'https://suzuki84g.github.io/',
-          code: 'https://github.com/suzuki84g/suzuki84g.github.io'
+          code: 'https://github.com/suzuki84g/suzuki84g.github.io',
+          tech: [],
+          impressions: ''
         },
         {
           title: 'イカステージ',
-          about: 'splatoon2のステージ情報を表示します。',
+          overview: 'splatoon2のステージ情報を表示します。',
+          // image: require(),
           url: 'https://ika-stage.herokuapp.com/index.html',
-          code: 'https://github.com/suzuki84g/ikaStageSort'
+          code: 'https://github.com/suzuki84g/ikaStageSort',
+          tech: [],
+          impressions: ''
         }
       ]
     }
@@ -38,4 +44,11 @@ export default {
 </script>
 
 <style lang="scss">
+.works-container {
+  display: flex;
+  flex-direction: column;
+  .work {
+    margin-bottom: 1rem;
+  }
+}
 </style>
