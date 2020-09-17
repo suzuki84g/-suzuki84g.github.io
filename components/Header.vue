@@ -4,7 +4,7 @@
       <h1>ポートフォリオ</h1>
     </div>
     <div class="navlist">
-      <p>更新日付とか</p>
+      <p>更新日：2020/09/17</p>
     </div>
     <!-- <Navlist /> -->
   </div>
