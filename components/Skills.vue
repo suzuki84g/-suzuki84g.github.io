@@ -9,9 +9,12 @@
           <h3>{{ skill.field }}</h3>
         </div>
         <ul>
-          <li v-for="ability in skill.abilitys" :key="ability">
+          <li v-for="ability in skill.abilitys" :key="ability" class="abilitys">
             {{ ability }}
           </li>
+          <p class="comment">
+            {{ skill.comment }}
+          </p>
         </ul>
       </div>
     </div>
@@ -25,15 +28,18 @@ export default {
       skillSet: [
         {
           field: 'フロントエンド',
-          abilitys: ['HTML5', 'CSS3', 'sass', 'JavaScript', 'Bootstrap', 'Vue.js', 'Nuxt.js', 'Vuetify']
+          abilitys: ['HTML5', 'CSS3', 'sass', 'JavaScript', 'Bootstrap', 'Vue.js', 'Nuxt.js', 'Vuetify'],
+          comment: 'モダンなWebサイトの理解、フレームワークの使用、REST APIの利用など。'
         },
         {
           field: 'バックエンド',
-          abilitys: ['Linux', 'WindowsServer', 'Python', 'Node.js', 'MySQL']
+          abilitys: ['Linux', 'WindowsServer', 'Python', 'Node.js', 'MySQL', 'AWS'],
+          comment: 'CLIの操作、Webアプリケーションの運用、DBの管理、AWS EC2の構築、シンプルなPythonプログラムの作成。'
         },
         {
           field: 'その他',
-          abilitys: ['git', 'GitHub', 'docker', 'Vagrant', 'AWS', 'Heroku', 'PMO', 'オンプレミス環境の物理作業']
+          abilitys: ['git', 'GitHub', 'docker', 'Vagrant', 'Heroku', 'PMO', 'オンプレミス環境の物理作業'],
+          comment: '開発コードの管理や仮想環境の構築。プロジェクト進行管理など。'
         }
       ]
     }
@@ -51,9 +57,13 @@ export default {
   }
   ul {
     margin: 0 1rem 1rem;
+    .comment {
+      font-size: small;
+    }
   }
   li {
     display: inline;
+    font-weight: bold;
   }
 }
 </style>
