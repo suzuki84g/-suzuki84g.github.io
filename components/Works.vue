@@ -9,6 +9,7 @@
         <p>{{ work.overview }}</p>
         <p><a :href="work.url">{{ work.url }}</a></p>
         <p><a :href="work.code">github</a></p>
+        <p>所感：{{ work.impressions }}</p>
       </div>
     </div>
   </section>
@@ -36,6 +37,15 @@ export default {
           code: 'https://github.com/suzuki84g/ikaStageSort',
           tech: [],
           impressions: ''
+        },
+        {
+          title: 'mastodonのオリジナルtheme実装',
+          overview: '本体の仕様変更に追従出来ていなかった既存カスタムテーマのリプレイス',
+          // image: require(),
+          url: 'https://ika.queloud.net/',
+          code: 'https://github.com/suzuki84g/mastodon/tree/feature/ikadon',
+          tech: [],
+          impressions: 'Pull Request now...'
         }
       ]
     }

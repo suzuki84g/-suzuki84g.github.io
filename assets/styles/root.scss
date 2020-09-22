@@ -16,11 +16,9 @@ box-sizing: border-box;
 h1 {
   font-weight: bold;
 }
-.wrapper {
+.container {
   // iPad横が最大サイズ
   max-width: 1024px;
-}
-.container {
   padding: 15px;
   display: flex;
   flex-direction: column;
