@@ -8,17 +8,20 @@
         <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
       </div>
       <div class="introduction">
+        <div class="name-box">
+          <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
+        </div>
         <div class="base-status">
-          <div class="name-box">
-            <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
-          </div>
           <div class="text-box">
             <p>Webエンジニア / 主夫</p>
             <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
             <p>{{ mail }}</p>
           </div>
+          <div class="pokedex">
+            <p>{{ profileSentence1 }}</p>
+            <p>{{ profileSentence2 }}</p>
+          </div>
         </div>
-        <Link />
       </div>
     </div>
   </section>
@@ -46,7 +49,8 @@ export default {
         birthday: {},
         today: {}
       },
-      profileSentence: 'てすとてすとてすと'
+      profileSentence1: 'ネットワークSI出身のWebエンジニア。',
+      profileSentence2: '特性を活かした爆発力がある為、こだわりアイテムとの相性が良い。'
     }
   },
   computed: {
@@ -92,6 +96,7 @@ export default {
     }
   }
   .introduction {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,12 +104,10 @@ export default {
       width: auto;
       align-self: start;
       margin-bottom: 1rem;
-      .text-box {
+      .text-box,
+      .pokedex {
         margin-left: 1rem;
         margin-bottom: 0.5rem;
-      }
-      .about {
-        margin-left: 1rem;
       }
     }
   }
