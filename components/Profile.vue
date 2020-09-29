@@ -28,14 +28,10 @@
 </template>
 
 <script>
-import Link from '~/components/Link'
 
 export default {
   data () {
     return {
-      components: [
-        Link
-      ],
       nameKanzi: '鈴木 優紀',
       nameAlphabet: 'SUZUKI Yuki',
       myBirthday: {
