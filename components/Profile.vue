@@ -4,31 +4,39 @@
       <h2>About</h2>
     </div>
     <div class="profile-container">
-      <div class="avatar">
-        <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
-      </div>
-      <div class="introduction">
-        <div class="name-box">
-          <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
+      <div class="profile-wrapper">
+        <div class="avatar">
+          <img src="/favicon_package_v0.16/android-chrome-512x512.png" alt="self-icon">
         </div>
-        <div class="base-status">
-          <div class="text-box">
-            <p>Webエンジニア / 主夫</p>
-            <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
-            <p>{{ mail }}</p>
+        <div class="introduction">
+          <div class="name-box">
+            <h3>{{ nameKanzi }} / {{ nameAlphabet }}</h3>
           </div>
-          <div class="pokedex">
-            <p>{{ profileSentence1 }}</p>
-            <p>{{ profileSentence2 }}</p>
+          <div class="base-status">
+            <div class="text-box">
+              <p>Webエンジニア / 主夫</p>
+              <p>{{ myBirthday.year }}/{{ myBirthday.month }}/{{ myBirthday.day }} ({{ age }})</p>
+              <p>{{ mail }}</p>
+            </div>
+            <div class="pokedex">
+              <p>{{ profileSentence1 }}</p>
+              <p>{{ profileSentence2 }}</p>
+            </div>
           </div>
         </div>
       </div>
+      <Episode />
     </div>
   </section>
 </template>
 
 <script>
+import Episode from '~/components/Episode'
+
 export default {
+  components: {
+    Episode
+  },
   data () {
     return {
       nameKanzi: '鈴木 優紀',
@@ -73,6 +81,10 @@ export default {
 
 <style lang="scss">
 .profile-container {
+  display: flex;
+  flex-direction: column;
+}
+.profile-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
