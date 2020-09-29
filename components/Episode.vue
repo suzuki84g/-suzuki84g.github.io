@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>
-      personality
+      <!-- personality -->
     </h3>
   </div>
 </template>

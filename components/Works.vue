@@ -27,7 +27,7 @@ export default {
           url: 'https://suzuki84g.github.io/',
           code: 'https://github.com/suzuki84g/suzuki84g.github.io',
           tech: [],
-          impressions: ''
+          impressions: 'Nuxt.JSです。'
         },
         {
           title: 'イカステージ',
@@ -36,7 +36,7 @@ export default {
           url: 'https://ika-stage.herokuapp.com/index.html',
           code: 'https://github.com/suzuki84g/ikaStageSort',
           tech: [],
-          impressions: ''
+          impressions: '作りがメチャクチャなのでいい加減直したい…。'
         },
         {
           title: 'mastodonのオリジナルtheme実装',
