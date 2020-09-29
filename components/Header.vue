@@ -27,7 +27,6 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
-  .navlist {
-  }
+  margin-bottom: 15px;
 }
 </style>

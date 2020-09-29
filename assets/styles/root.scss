@@ -16,12 +16,17 @@ box-sizing: border-box;
 h1 {
   font-weight: bold;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .container {
   // iPad横が最大サイズ
   max-width: 1024px;
   padding: 15px;
   display: flex;
   flex-direction: column;
+  align-self: center;
   section {
     display: flex;
     flex-direction: column;
